@@ -1,0 +1,40 @@
+
+*{
+    margin:0;
+}
+.parent{
+    background-color: aquamarine;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.child{
+    width:200px;
+    height:200px;
+    background-color: dodgerblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 0 30px;
+
+}
+
+/* .main{
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+

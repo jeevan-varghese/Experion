@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.name{
+    padding: 30px 0 0 0 ;
+}
+nav{
+    background-color: black;
+    min-height: 10vh;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+}
+.search{
+    align-items: center;
+    margin-right: 50px;
+}
+.search input{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+
+.search-icon{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: contain;
+    background-image:url("https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-16.png")
+}
+.my{
+    padding: 0 10px 0px 30px;
+    color: white;
+    font-family: arial;
+    font-size: 30px;
+    
+}
+.tube{
+    color: red;
+    font-family: arial;
+    background-color: white;
+    padding: 4px;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+.main{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    padding: 50px;  
+    height: 90vh;
+    box-sizing: border-box;
+    background-color: black;
+}
+.thumbnail{
+    height: 150px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.ytimg.com/vi/kffacxfA7G4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDaLvWx5ctVDRx2Gu3ERjF0snZ9Eg");
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.thumbnail-1{
+    height: 150px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.ytimg.com/vi/lNRB7OCo8Wo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC170ycK5ZTWeVAMb8A6uSR0bpAfA");
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.thumbnail-2{
+    height: 150px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.ytimg.com/vi/MuI3VhKMxSA/hq720_live.jpg?sqp=CPCjlZ0G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCk4tuo7bWLTacCdaHYvchjApjaFA");
+    justify-content: end;
+    align-items: flex-end;
+}
+.thumbnail-3{
+    height: 150px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.ytimg.com/vi/MYNZjrWszT0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2yv3Cf97ojRuDh6OqJCV61N6AtA");
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.card{
+    height: 200px;
+    border-radius: 15px;
+}
+.thumb-bottum{
+    margin: 18px 0 0 0;
+    max-height: 10px;
+    overflow-wrap: break-word;
+}
+.icon{
+    min-height: 30px;
+    min-width: 30px;
+    background-size: contain;
+    border-radius: 50%;
+    background-image: url(https://yt3.ggpht.com/ytc/AMLnZu-MPl6e5QKTWlsnMr6_8DyE3GzjeRzUCxneF2itFA=s88-c-k-c0x00ffffff-no-rj);
+}
+
+.icon-1{
+    min-height: 30px;
+    min-width: 30px;
+    background-size: contain;
+    border-radius: 50%;
+    background-image: url("https://yt3.ggpht.com/5UePT_NJrCljJ_WPQedFft1MWSOWgKtX32JmpyNylhHkHczBc_O7-OWai9RfM3dC0r8avliE=s68-c-k-c0x00ffffff-no-rj");
+}
+
+.icon-2{
+    min-height: 30px;
+    min-width: 30px;
+    background-size: contain;
+    border-radius: 50%;
+    background-image: url("https://yt3.ggpht.com/ytc/AMLnZu-9JRNqIfhBB0GNQwU5S2H9lv4NOu_BFYDT-t9rGQ=s68-c-k-c0x00ffffff-no-rj");
+}
+
+.icon-3{
+    min-height: 30px;
+    min-width: 30px;
+    background-size: contain;
+    border-radius: 50%;
+    background-image: url("https://yt3.ggpht.com/ytc/AMLnZu8pz388XE34SxVW5YiW5IGCPo4zPXAEgo7PbdMkNQ=s68-c-k-c0x00ffffff-no-rj");
+}
+.txt-container{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    min-height: 40px;
+    
+}
+.txt-container p{
+    color: white;
+   font-size: 10px;
+    margin-left: 14px;
+}
+.thumbnail-2 p{
+    background-color:red ;
+}
+.timer p{
+    background-color: black;
+    padding: 4px;
+    color: white;
+    font-size: 10px;
+    border-radius: 4px;
+    margin: 6px;
+
+}

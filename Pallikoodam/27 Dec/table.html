@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+
+    <style>
+        .overlap{
+            margin-left:-15px;
+        
+        }
+        .avatar{
+            height: 33px;
+            transition-duration: 0.3s;
+
+        }
+        .avatar:hover{
+            transform: scale(1.1);
+            z-index: 5;
+        }
+        .email:hover::after{
+            content: '\2709';
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- get mail icon search utf icons  -->
+    <!-- for table background use class "table-primary" -->
+    <!-- "table-bordered" for table column border -->
+    <!-- "table-striped" change color evenly to rows, "table-striped-column" for column -->
+    <!-- "table-hover" for hover effect on table -->
+    <!-- for icons we have default icons in bootstrap see in bootstrap site , or font awsome : got fontawsome site - start - download - web -->
+    <div class="container-fluid">
+        <table class="table table-danger table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Avatar</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <div class="d-flex">
+                            <img class="avatar border border-warning rounded-pill" src="https://th.bing.com/th/id/R.54e9ec5365eeb967838ffd2a35eda50b?rik=h%2bfY8HSuXACUPQ&riu=http%3a%2f%2fwww.hotavatars.com%2fwp-content%2fuploads%2f2019%2f01%2fI80W1Q0.png&ehk=NSQkB5B%2fUOzON7Gd8fGH9%2bEBxOki2BAu6FdDH0E1TGY%3d&risl=&pid=ImgRaw&r=0" height="40px" alt="">
+                           
+                            <img class="overlap avatar border border-warning rounded-pill overlap" src="https://www.drupal.org/files/user-pictures/picture-2516272-1559035337.png" height="40px" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="email">
+                            user-1@gmail.com
+                            <span class="badge rounded-pill bg-primary">&check;</span>
+                        </div>
+                    </td>
+                    <span class="badge rounded-pill bg-success"></span>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-warning">
+                                <span class="fa fa-eye"></span>
+                                View</button>
+                            <button class="btn btn-danger">
+                                <span class="fa fa-trash"></span>
+                                View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <div class="avatar">
+                           <img class="avatar border border-warning rounded-pill" src="https://lh5.googleusercontent.com/-nC2HrzpBfYA/AAAAAAAAAAI/AAAAAAAAAYA/DwxFKXOZjxw/c0x00000000-cc-rp-mo/photo.jpg"  class="bg-primary rounded-circle"  alt="">
+                        </div>
+                    </td>
+                    <td>user-2@gmail.com
+                        <span class="badge rounded-pill bg-success">&check;</span>
+                    </td>
+                    <span class="badge rounded-pill bg-success"></span>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-warning">
+                                <span class="fa fa-eye"></span>
+                                View</button>
+                            <button class="btn btn-danger">
+                                <span class="fa fa-trash"></span>
+                                View</button>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
