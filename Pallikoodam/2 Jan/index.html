@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="handleClick(event)">Click here</button> 
+
+    <!-- <p id="p1">Default</p> -->
+    <!-- we can use multiple script tags -->
+    <!-- we can access data from another script tag  -->
+    <!-- If their is any error in a line in a script tag, it will not execute next line but execute next script tag.  -->
+    <script>
+
+        //********* types of consoles *************
+
+        // console.log('Hello from js..');
+        // console.table(['one', 'Two', 'Three']);
+        // console.error('Error occurred');
+        // console.info('Login successfully completed!');
+        // console.warn('Need at least 8 characters ');
+
+        // *********** Alert pop-up ***********
+
+        // alert('This is an alert');
+
+        // *********** confirm ********
+
+        // let option = confirm('Do you want to continue?');
+        // console.log(option);
+
+        // *********** prompt to get input from user ***********
+
+        // const name = prompt('Enter your name');
+        // console.log(name);
+
+        // ********* display on page ********
+
+        // document.write('hi hello');
+
+        // ********** Read from page *********
+        // const element = document.getElementById('p1');
+        // console.log(element);
+        // element.style.color = 'dodgerblue';
+        
+        function handleClick(e){
+            console.log('button clicked');
+            alert('button clicked');
+
+            e.target.innerText = 'clicked'; 
+            // pass event with event function to get clicked buttons properties. 
+        }
+        
+    </script>
+
+    
+</body>
+</html>
