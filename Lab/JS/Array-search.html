@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Search element in array</h1>
+    <script>
+        let array = [22, 1, 23, 2, 3, 4, 5, 878, 8, 6, 9, 10, 12, 15, 12];
+        let value = prompt('Enter the value to search ');
+        let found = false;
+        array.forEach(element => {
+            if (element == value) 
+                found = true;
+        });
+        if (found) {
+            document.write('Element found');
+        }
+        else{
+            document.write('Element not found');
+        }
+    </script>
+</body>
+</html>
