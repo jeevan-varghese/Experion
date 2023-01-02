@@ -10,6 +10,10 @@
 
     <button onclick="handleClick(event)">Click here</button> 
 
+    <p onclick="handleClick(event)">click here</p>
+
+    <input type="text" id="test" value="">
+
     <!-- <p id="p1">Default</p> -->
     <!-- we can use multiple script tags -->
     <!-- we can access data from another script tag  -->
@@ -54,6 +58,14 @@
             e.target.innerText = 'clicked'; 
             // pass event with event function to get clicked buttons properties.
         }
+
+        var e = document.getElementsByTagName('p');
+        for (let i = 0; i < e.length; i++) {
+            const element = e[i];
+            element.innerText = 'new one';
+        }
+
+        document.getElementById('test').setAttribute('placeholder', 'sample@gmail.com')
         
     </script>
 
