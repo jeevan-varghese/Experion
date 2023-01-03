@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" style="height: 150px; width: 10px; background-color: dodgerblue; border: 1px solid black;"></div>
+    <hr>
+    <input type="range" min="10" max="100" value="10" onchange="executeEvent(event)">
+    <input type="range" min="1" max="10" value="10" onchange="executeEvent1(event)">
+
+    <hr>
+    <button>Click Here</button>
+    <button>Click Here</button>
+    <div>
+        <button>Click Here</button>
+        <button class="btn">Click Here</button>
+        <button class="btn">Click Here</button>
+    </div>
+    <script>
+        const btn = document.querySelectorAll('div .btn');
+        btn.forEach(element => {
+            element.style.backgroundColor= 'cyan'
+        });
+
+        document.querySelectorAll('button').forEach(btn =>{
+            btn.addEventListener('click', (e)=>{
+                e.target.innerText = 'clicked'
+                e.target.style.backgroundColor = 'red'
+            })
+        })
+
+        const box = document.getElementById('box');
+        function executeEvent(e){
+            box.style.width = `${e.target.value}px`;
+        }
+
+        function executeEvent1(e){
+            box.style.borderWidth = `${e.target.value}px`
+        }
+    </script>
+</body>
+</html>

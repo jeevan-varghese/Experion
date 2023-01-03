@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" tabindex="1" id="target" onkeyup="executeEvent(event)"> <!-- also can use onChange() -->
+    <button onclick="selectTextBox()">Select text box</button>
+    <h1 id="result"></h1>
+    <script>
+            const target = document.getElementById('target');
+            function selectTextBox(){
+                target.focus();
+            }
+            const res = document.getElementById('result')
+            function executeEvent(e){
+                    res.innerText = e.target.value;
+            }
+    </script>
+</body>
+</html>
