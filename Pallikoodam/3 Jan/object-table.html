@@ -12,6 +12,7 @@
             <thead>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Action</th>
             </thead>
             <tbody id="content">
 
@@ -38,9 +39,23 @@
             const row = `<tr>
                         <td>${user.name}</td>
                         <td>${user.email}</td>
+                        <td><button>Delete</button></td>
                         </tr>`
-            target.innerHTML += row
+            target.innerHTML += row;
         })
+                document.querySelectorAll('button').
+                forEach(btn=>{
+                    btn.addEventListener('click',(e)=>{
+                        //let uname = e.target.parentNode.parentNode;
+                        //console.log(uname);
+                        const option = confirm(`Do you want to remove user`);
+                        if(option)
+                            {
+                                e.target.parentElement.parentElement.remove();
+                            }
+                    })
+                })
+        
     </script>
 </body>
 </html>
