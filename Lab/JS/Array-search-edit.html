@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-array"></h1>
+    <button onclick="elementSearch()">search</button>
+    <hr>
+    <h1 id="new-array"></h1>
+    <p id="message"></p>
+    <script>
+        let found ;
+        let array = [3, 4, 6, 8, 2, 1, 7];
+        let mainArray = document.getElementById('main-array');
+        mainArray.innerText = array;
+        let message = document.getElementById('message');
+        function elementSearch(){
+            let newArray = document.getElementById('new-array');
+            let value = prompt('Enter the element want to find');
+            for (let i = 0; i < array.length; i++) {
+                if(array[i] == value)
+                {
+                    found = true;
+                    let newValue = prompt('Value founded, Enter the new value to be change');
+                    array[i] = newValue;
+                    newArray.innerText = `New array ${array}`;
+                }
+            }
+            if(!found){
+                message.innerText = "Not found"
+            }
+        }
+        
+    </script>
+</body>
+</html>
