@@ -16,17 +16,17 @@
 <body class="containert">
 
     <div class="container">
-        <form onsubmit="handleSubmit(event)" name="login">
+        <form onsubmit="handleSubmit(event)" name="login" id="login">
             <div>
                 <label for="email">Email</label>
                 <input type="email" name="email" class="form-control">
-              <span class="text-danger d-none">Invalid password</span>
+              <div class="text-danger d-none"></div>
 
             </div>
             <div>
               <label for="password">Password</label>
               <input type="password" name="password" class="form-control">
-              <span class="text-danger d-none">Invalid password</span>
+              <div class="text-danger d-none"></div>
           </div>
            <div class="d-grid mt-2">
             <button type="submit" class="btn btn-success">Login</button>
