@@ -1,0 +1,45 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--    form authentication with validation    -->
+    
+    <form>
+        <input type="email" placeholder = "Enter your email" id = "email">
+        <h1 id = "error_text"></h1>
+        <input type="password"  placeholder = "Enter your password" id = "password">
+        <br>
+        <br>
+        <input type="submit" value = "login">
+    </form>
+    <script>
+        let database = {
+            email:"jeevan@email.com",
+            password:"jeevan@123"
+        }
+let form = document.querySelector("form");
+form.addEventListener('submit',function (event){
+    event.preventDefault()
+    let email = document.querySelector("#email")
+    let password = document.querySelector("#password")
+    let message = document.getElementById('error_text')
+    console.log(email.value,password.value)
+if(email.value === database.email & password.value === database.password){
+message.innerHTML = "You have successfully logged in";
+}
+else{
+    message.innerText = "Email or password is not valid"
+}
+})
+    </script>
+</body>
+</html>

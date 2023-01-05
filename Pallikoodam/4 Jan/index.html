@@ -14,7 +14,24 @@
 </head>
 
 <body>
-    <script>
+  <input type="text" class="form-control" placeholder="search email.." id="searchBar" onkeyup="functionSearch(event)">
+  <h1 id="head"></h1> 
+    <table class="table table-dark table-striped htable-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Avatar</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="content">
+
+      </tbody>
+    </table>
+
+
+    <!-- <script>
 
         // promise
         
@@ -44,7 +61,7 @@
         }
         http.open('GET', 'https://reqres.in/api/users/2');
         http.send();
-    </script>
+    </script> -->
   
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -54,6 +71,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
+  <script src="/Pallikoodam/4 Jan/scripts/app.js"></script>
 </body>
 
 </html>
