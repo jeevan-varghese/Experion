@@ -6,7 +6,7 @@
     display: flex;
 }
 body{
-    background-image: url(/CabDesign/images/cab-bg.jpg);
+    background-image: url(/images/cab-bg.jpg);
     background-size: cover;
 }
 .email-txt{
