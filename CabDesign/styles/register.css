@@ -23,7 +23,7 @@ body{
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    color: beige;
+    color: #f5f5dc;
     padding: 20px;
     background-color: rgba(146, 141, 135, 0.395);
     width: 20vw;
@@ -31,9 +31,9 @@ body{
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.484);
 }
 .container input{
-    color: aliceblue;
+    color: #f0f8ff;
     background: none;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 5px 15px 5px 5px;
     margin:0px 0px 10px 0px;
@@ -43,38 +43,38 @@ body{
     align-items: center;
 }
 .register-btn{
-    color: aliceblue;
+    color: #f0f8ff;
     background-color: rgba(0, 0, 0, 0.54);
     justify-content: center;
     align-items: center;
     padding: 5px 50px;
-    border: 1px solid wheat;
+    border: 1px solid #f5deb3;
     border-radius: 5px;
     margin: 5px 0;
     font-weight: bold;
 }
 .register-btn:hover{
     cursor: pointer;
-    background-color: aliceblue;
-    color: black;
+    background-color: #f0f8ff;
+    color: #000000;
 }
 .line{
     margin: 10px 0px;
     height: 1px;
     width: 190px;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 .login-txt{
     font-size: 13px;
     cursor: pointer;
     text-decoration: none;
-    color: antiquewhite;
+    color: #faebd7;
 }
 .register-head{
     font-size: 30px;
     font-weight: bolder;
     padding-top: 20px;
-    text-shadow: 5px 6px 5px black;   
+    text-shadow: 5px 6px 5px #000000;   
 }
 .logo-small{
     margin: 5px 0px 20px 0px;
@@ -85,7 +85,7 @@ body{
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    box-shadow: 5px 10px 5px black;
+    box-shadow: 5px 10px 5px #000000;
 }
 .company-name{
     top: 20vh;
@@ -94,7 +94,7 @@ body{
     position: absolute;
     box-sizing: border-box;
     font-size: 40px;
-    color: aliceblue;
+    color: #f0f8ff;
     text-shadow: 5px 6px 5px rgb(90, 122, 197);
 }
 .company-name img{
