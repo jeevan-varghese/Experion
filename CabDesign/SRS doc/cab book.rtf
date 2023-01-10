@@ -1,0 +1,133 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs52\lang16393\par
+\par
+\fs72 CAB SERVICE MANAGEMENT\fs52\par
+\par
+\par
+
+\pard\sa200\sl276\slmult1\fs40 INTRODUCTION\par
+\fs36\tab PURPOSE\par
+\tab\tab\b0\fs28 It helps the passengers to find and book their cab easily and \tab\tab\tab fast. Helps manage cab services easily.\par
+\tab\b\fs36 SCOPE\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1800\sa200\sl276\slmult1\b0\fs28 The passenger can easily find and book their cab from where their.\b\fs52\par
+{\pntext\f1\'B7\tab}\b0\fs28 Driver can easily get passenger and earn more.\b\fs52\par
+
+\pard\sa200\sl276\slmult1\fs36 ACTORS\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0\fs28 Admin\lang9\par
+{\pntext\f1\'B7\tab}\lang16393 Driver\lang9\par
+{\pntext\f1\'B7\tab}\lang16393 Passenger\lang9\par
+{\pntext\f1\'B7\tab}\lang16393 Finance\fs22\lang9\par
+
+\pard\sa200\sl276\slmult1\b\fs36\lang16393 REQUIREMENTS\par
+LOGIN\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 For login the user should needed to provide,\b0\fs28\par
+
+\pard\sa200\sl276\slmult1\tab\tab 1. Field to put Email Id. It must be a valid Email also it should \tab\tab\tab be an unique.If it is not a valid or unique then show a warning \tab\tab\tab message.\par
+
+\pard\ri-732\sa200\sl276\slmult1\tab\tab 2. Field to enter password.Password should must contain \tab\tab\tab atleast 8 charecters.If the entered password is less than 8 then \tab\tab\tab show a warning message.\par
+\tab All the fields are mandatory, if any one is not filled it will show a \tab warning message.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-732\sa200\sl276\slmult1\b\fs36 When user clicks on login button,\b0\fs28\par
+
+\pard\ri-732\sa200\sl276\slmult1\b\fs36\tab\tab\b0\fs28 1. Check whether  the user exist. If user not exist show warning \tab\tab message to register.\par
+\tab\tab 2. If the Email Id and User name is correct, redirect to user \tab\tab\tab main page.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-732\sa200\sl276\slmult1\b\fs36 If the user forgot their password their need an option to recover password.\b0\fs28\par
+{\pntext\f1\'B7\tab}\b\fs36 If the user doesn't registered before there need an option to redirect to register page.\b0\fs28\par
+
+\pard\ri-732\sa200\sl276\slmult1\tab\par
+
+\pard\sa200\sl276\slmult1\b\fs36 REGISTER\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Each user needed to choose actor to register.\par
+{\pntext\f1\'B7\tab}Registration facility is done by using contact number with otp send via text message.\par
+
+\pard\sa200\sl276\slmult1\tab\b0\fs28 The user should needed to provide,\par
+\tab\tab 1. There need a space to put full name with hint.\par
+\tab\tab 2. Field to put contact number.They must needed to add their \tab\tab\tab country codes befor the contact number[ eg : +91 for India].\par
+\tab\tab 3. Field to put Email Id. It must be a valid Email also it should \tab\tab\tab be an unique.If it is not a valid or unique then show a warning \tab\tab\tab message.\par
+\tab\tab 4. Field to enter password.Password should must contain \tab\tab\tab atleast 8 charecters.If the entered password is less than 8 then \tab\tab\tab show a warning message.\par
+
+\pard\ri-732\sa200\sl276\slmult1\tab\tab 5. Which actor he is [admin,  driver, \tab\tab\tab\tab\tab\tab  \tab      passenger,finance ].If it was not selected show a warning \tab\tab\tab message.\par
+\tab\tab 6 Field to set location[state, district, pincode].\par
+\tab\tab 7. Field to upload profile image.\par
+\tab After providing these requirements the user wanted to get an otp to \tab their given contact number.\par
+\tab All the fields are mandatory, if any one is not filled it will show a \tab warning message.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-732\sa200\sl276\slmult1\b\fs36 If the otp is correct redirect to user main page.\par
+
+\pard\ri-732\sa200\sl276\slmult1 ADMIN\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-732\sa200\sl276\slmult1 Admin main page contain,\par
+
+\pard\ri-732\sa200\sl276\slmult1\tab\b0\fs28 1. Main page of admin contains list of active drivers and their \tab locations with driver image.If admin clicks on specific driver it will \tab redirect to a page showing driver and car info, from where to where \tab now he was going.\b\fs36\par
+\tab\b0\fs28 2. Tab to see the drivers list, search option to search using driver \tab\tab name or vehicle number. If admin clicks on specific driver, redirect to \tab another page showing details of driver and vehicle. On driver info \tab page admin have options to edit or remove drive info.\par
+\tab 3. Tab to see the registered passengers list, search option using \tab passenger name.If admin clicks on specific passenger, redirect to \tab another page showing details of passenger. On passenger info page \tab admin have options to edit or remove passenger info.\par
+\tab 4. Tab to see the current number passengers travelled in that day, \tab also on that month.\par
+\tab 5. Tab to see passenger reviews and issues.\par
+\tab 6. At the top of the left side there needed to show admin profile \tab picture and name. On clicking the profile picture it will redirect  to \tab another page which shows the admin info. On admin info page there \tab need option to edit datas.\par
+\par
+\b\fs36 DRIVER\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-732\sa200\sl276\slmult1 Driver main page contain,\par
+
+\pard\ri-732\sa200\sl276\slmult1\tab\b0\fs28 1. At the top of the left side there needed to show driver profile \tab picture and name. On clicking the profile picture it will redirect  to \tab another page which shows the driver info. On driver info page there \tab need option to edit datas. \par
+\tab 2. On the driver info page there must need,\par
+\tab\tab\tab a. Field to input vehicle number.\par
+\tab\tab\tab b. Field to input vehicle image.There need 4 pictures of 4 \tab\tab\tab different sides.\par
+\tab\tab\tab c. Field to upload picture of the driving licence of the \tab\tab\tab\tab driver.\par
+\tab\tab\tab d. Fields to upload picture of vehicle documents \tab\tab\tab\tab\tab [pollution test certificate, insurence, registration \tab\tab\tab\tab\tab documents].\par
+\tab\tab\tab e. Field to add vehicle info,\par
+\tab\tab\tab\tab 1. Seat capacity of vehicle.\par
+\tab\tab\tab\tab 2. Premium or non-premium.\par
+\tab 3. On page there need to show count of rides did he go today, how \tab much he earned today, then list of rides in the manner of recent with \tab destination and fare. \par
+\tab 4. If a passenger book cab of driver there will show a pop up window \tab with accept and decline buttons, containg pickup location, \tab destination and contact number.When driver accept it will redirect to \tab the page containing maps. \par
+\tab 5. After the ride driver get payment and update driver main page \tab\tab include ride count, list, earning.\par
+\par
+\b\fs36 PASSENGER\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-732\sa200\sl276\slmult1 Passenger main page contain,\par
+
+\pard\ri-732\sa200\sl276\slmult1\tab\b0\fs28 1. At the top of the left side there needed to show passenger profile \tab picture and name. On clicking the profile picture it will redirect  to \tab another page which shows the passenger info. On driver info page \tab there \tab need option to edit datas. \par
+\tab 2. There should need two searching bar, one is for passenger \tab location[pickup location] and the other is for destinatination where \tab the passenger wanted to go. \par
+\tab 3. When passenger clicks search button, there must want a pop up \tab window on bottom for choosing type of car passenger want \tab according to,\par
+\tab\tab a, Seat capacity [3 peoples, 5 peoples].\par
+\tab\tab b, Premium or non-premium.\par
+\tab 4. After the selection of passenger it will redirect to payment page. \par
+\tab 5. After the payment passenger get window showing the location \tab where the cab is now. At the bottom show driver name, vehicle \tab number, driver contact number and also booking canclellation \tab option.\par
+\tab 6. After the ride the passenger can give feedback and rating to the \tab driver.\par
+\tab 7. Under the search bars there needed to show the list of passenger \tab ride with destination, fare, date. It was sorted according to recent \tab rides.\par
+\b\fs36 FINANCE\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ri-732\sa200\sl276\slmult1 Finance main page contain,\par
+
+\pard\ri-732\sa200\sl276\slmult1\tab\b0\fs28 1. At the top of the left side there needed to show financer profile \tab picture and name. On clicking the profile picture it will redirect  to \tab another page which shows the financer info. On financer info page \tab there \tab need option to edit data.\par
+\tab 2. Main page show total amount today got today and also a graph \tab showing amounts of last 7 days.\par
+\tab 3. Need a tab for refunds view. On that page show total refunds got \tab today and also a graph showing refunds of last 7 days.\par
+\tab 4. Need another tab for issues and feedback. On that tab shows the \tab list of issues reported by passengers and drivers according to their \tab payment.\par
+\tab 5. Need a tab to set fare on the basis of,\par
+\tab\tab a, Rate per kilometer.\par
+\tab\tab b, Seat capacity.\par
+\tab\tab c, Premium or non-premium.\par
+\par
+ \par
+\b\fs36\par
+\tab\par
+\par
+\fs28\par
+
+\pard\sa200\sl276\slmult1\fs36\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b0\fs22\lang9\par
+\par
+}
+ 
